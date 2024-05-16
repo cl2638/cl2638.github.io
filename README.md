@@ -1,2 +1,2 @@
-# cl2638.github.io
+# coltonleighton.com
 repository for coltonleighton.com
