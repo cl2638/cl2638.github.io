@@ -11,9 +11,15 @@ body {
 
 .container {
     text-align: center;
+    position: relative; /* Ensure container allows absolute positioning */
 }
 
 .buttons {
+    position: absolute;
+    top: 20px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; /* Ensure buttons are above the image */
     margin-bottom: 20px;
 }
 
@@ -29,7 +35,7 @@ body {
     margin: 5px 10px;
     cursor: pointer;
     border-radius: 5px;
-    font-family: 'Gnarly Bone Black PERSONAL', sans-serif; /* Apply the custom font */
+    font-family: 'Gnarly Bone Black PERSONAL', sans-serif;
 }
 
 .button:hover {
