@@ -2,39 +2,30 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
+    background: url('IMG_0114.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 200vh; /* Ensure the page is scrollable */
 }
 
-.container {
-    position: relative;
+.popup {
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     text-align: center;
-}
-
-.image-container {
-    position: relative;
-    display: inline-block;
-    border: 2px solid #ccc;
-    padding: 10px;
-    background-color: #fff;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-.buttons {
-    position: absolute;
+    width: 80%;
+    background-color: white;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    max-width: 700px;
+    padding: 20px;
+}
+
+.buttons {
     display: flex;
     gap: 10px;
+    justify-content: center;
 }
 
 .button {
