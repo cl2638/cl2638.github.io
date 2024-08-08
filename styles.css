@@ -10,17 +10,31 @@ body {
 }
 
 .container {
+    position: relative;
     text-align: center;
-    position: relative; /* Ensure container allows absolute positioning */
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    border: 2px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 .buttons {
     position: absolute;
-    top: 20px; /* Adjust as needed */
+    top: 10px;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 1; /* Ensure buttons are above the image */
-    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
 }
 
 .button {
@@ -32,24 +46,10 @@ body {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 5px 10px;
     cursor: pointer;
     border-radius: 5px;
-    font-family: 'Gnarly Bone Black PERSONAL', sans-serif;
 }
 
 .button:hover {
     border-color: black;
-}
-
-.image-container {
-    border: 2px solid #ccc;
-    padding: 10px;
-    background-color: #fff;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
 }
