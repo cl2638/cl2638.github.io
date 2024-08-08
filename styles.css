@@ -14,27 +14,12 @@ body {
     text-align: center;
 }
 
-.image-container {
-    position: relative;
-    display: inline-block;
-    border: 2px solid #ccc;
-    padding: 10px;
-    background-color: #fff;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
 .buttons {
     position: absolute;
-    top: 10px;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 10px;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Ensure buttons are above the image */
 }
 
 .button {
@@ -46,10 +31,24 @@ img {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    margin: 5px;
     cursor: pointer;
     border-radius: 5px;
+    font-family: 'Creepster', cursive; /* Apply the spooky font */
 }
 
 .button:hover {
     border-color: black;
+}
+
+.image-container {
+    border: 2px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
